@@ -1,13 +1,16 @@
 import React from 'react';
 import { GlobalStyle } from './GlobalStyle.js';
 import { IconStyle } from './assets/iconfont/iconfont';
+import { renderRoutes } from 'react-router-config';
+import { HashRouter } from 'react-router-dom';
+import routes from './routes/index';
 
 const App = () => (
-  <div className="App">
+  <HashRouter>
     <GlobalStyle></GlobalStyle>
     <IconStyle></IconStyle>
-    <i className="iconfont">&#xe62b;</i>
-  </div>
+    {renderRoutes(routes)}
+  </HashRouter>
 );
 
 export default App;
