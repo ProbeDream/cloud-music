@@ -1,3 +1,4 @@
 import React from 'react';
-const Home = props => <div className="Home"></div>;
+import {renderRoutes} from "react-router-config";
+const Home = props => <div className="Home">{renderRoutes(props.route.routers)}</div>;
 export default React.memo(Home);
