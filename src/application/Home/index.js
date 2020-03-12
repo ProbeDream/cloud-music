@@ -3,7 +3,7 @@ import { renderRoutes } from 'react-router-config';
 import { Top, Tab, TabItem } from './style';
 import { NavLink } from 'react-router-dom';
 const Home = props => {
-  const { route } = props;
+  const { routes } = props.route;
   return (
     <div>
       <Top>
@@ -28,7 +28,7 @@ const Home = props => {
           </TabItem>
         </NavLink>
       </Tab>
-      {renderRoutes(route.routers)}
+      {renderRoutes(routes)}
     </div>
   );
 };
