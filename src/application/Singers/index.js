@@ -1,3 +1,3 @@
 import React from 'react';
-const Singers = props => <div className="Singers"></div>;
+const Singers = () => <div>Singers</div>;
 export default React.memo(Singers);

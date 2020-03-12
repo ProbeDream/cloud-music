@@ -1,5 +1,5 @@
-import style from '../assets/global-style';
 import styled from 'styled-components';
+import style from '../../assets/global-style';
 
 export const Top = styled.div`
   display: flex;
@@ -38,7 +38,6 @@ export const Tab = styled.div`
     }
   }
 `;
-
 export const TabItem = styled.div`
   height: 100%;
   display: flex;
